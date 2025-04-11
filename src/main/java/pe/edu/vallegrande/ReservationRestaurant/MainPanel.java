@@ -1,0 +1,14 @@
+package pe.edu.vallegrande.ReservationRestaurant;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class MainPanel extends JPanel {
+
+    public MainPanel () {
+        setLayout(new BorderLayout());
+
+        add(new ReservationFormPanel(), BorderLayout.NORTH);
+        add(new ReservationTablePanel(), BorderLayout.CENTER);
+    }
+}
